@@ -1,6 +1,6 @@
 import type { NodaValue, Noda } from './types.js';
 
-function isInTreeUsingNonRecursiveBfs<T extends NodaValue>(
+export function isInTreeUsingNonRecursiveBfs<T extends NodaValue>(
   root: Noda<T>,
   val: T
 ): boolean {

@@ -1,18 +1,18 @@
 import type { NodaValue, Noda } from './types.js';
 
-export function isInTreeUsingDfs<T extends NodaValue>(root: Noda<T>, val: T): boolean {
+export function isInTreeUsingRecusiveDfs<T extends NodaValue>(root: Noda<T>, val: T): boolean {
   if (root.val === val) {
     return true;
   }
 
   if (root.left) {
-    if (isInTreeUsingDfs(root.left, val)) {
+    if (isInTreeUsingRecusiveDfs(root.left, val)) {
       return true;
     }
   }
 
   if (root.right) {
-    if (isInTreeUsingDfs(root.right, val)) {
+    if (isInTreeUsingRecusiveDfs(root.right, val)) {
       return true;
     }
   }
