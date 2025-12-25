@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "run": "node dist/main.js",
+    "go": "npm run build && npm run run"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3"
+  }
+}
