@@ -1,4 +1,4 @@
-export type NodaValue = Number | String;
+export type NodaValue = number | string;
 
 export type Noda<T extends NodaValue> = {
   left?: Noda<T>,
